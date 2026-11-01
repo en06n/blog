@@ -1,0 +1,37 @@
+# -----------------
+# custom error page
+# -----------------
+
+ErrorDocument 404 /404.html
+
+# ----------------
+# security headers
+# ----------------
+
+Header set X-Frame-Options "DENY"
+Header set X-Content-Type-Options "nosniff"
+Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+# -------------
+# cache-control
+# -------------
+
+# one week for css and js assets
+<FilesMatch "\.(css|js)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+
+# two weeks for images
+<FilesMatch "\.(jpg|jpeg|png|gif|ico)$">
+Header set Cache-Control "max-age=1209600, public"
+</FilesMatch>
+
+# one month for fonts
+<FilesMatch "\.(ttf|svg|eot|woff|woff2)$">
+Header set Cache-Control "max-age=2628000, public"
+</FilesMatch>
+
+# never for archives or feeds (xml, json)
+<FilesMatch "\.(zip|tar|dmg|xml|json)$">
+Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate, public"
+</FilesMatch>
