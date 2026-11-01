@@ -18,10 +18,11 @@
     </title>
 
     {% if page.image %}
-    {% capture page_image %} {% link_absolute {{ page.image.file | img_url: 'blog' }} %} {% endcapture %}
+    {% assign page_image_path = page.image.file | img_url: 'blog' %}
     {% else %}
-    {% capture page_image %} {% link_absolute {{ site.logo | img_url }} %} {% endcapture %}
+    {% assign page_image_path = site.logo | img_url %}
     {% endif %}
+    {% assign page_image = page_image_path | prepend: site.url %}
 
     {% if page.title %}
     {% assign page_title = page.title %}
