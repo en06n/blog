@@ -1,12 +1,30 @@
 ---
 layout: standalone
-title: About Me
+title: About
 ---
 
-#### Hi, I'm Jane Doe!
+## About
+こんにちは！プログラミングに興味があり、勉強中の学生です！<br>
+このブログでは、技術関連のメモや日常の雑記などを自由に書いています。<br>
+たまにイラストを投稿することもあります。
 
-Aute est Lorem anim id proident aliqua aliquip nisi cupidatat aliquip officia id ipsum do enim est reprehenderit ea ullamco ullamco consectetur pariatur id laboris eiusmod Lorem velit nulla consectetur eu eu reprehenderit enim nulla excepteur sit eiusmod ullamco deserunt aute sunt qui cillum ea reprehenderit elit nostrud dolor id qui id aliqua ad eiusmod fugiat pariatur minim reprehenderit fugiat qui culpa ad anim ex culpa eiusmod sunt quis laborum sunt occaecat amet incididunt qui est officia velit sint consectetur incididunt occaecat dolor nulla incididunt irure ut do amet sit velit enim aliqua ex fugiat aliqua cillum dolor tempor duis.
+## Interests
+- プログラミング言語の理論
+    - ML系の言語にとくに関心があります
+    - 言語の性質について定理証明支援系言語を用いて証明したり、考えたりすることに興味があります
+- OS関連
+- AI関連
+    - 話題の事柄の理解・キャッチアップをしっかりできるようになりたいです
+    - 加えて、AI（とくにDeep Learning）の仕組みについても理解したいです
 
-Excepteur ullamco laboris non in commodo cillum duis ad sunt sit sunt minim elit tempor eu tempor adipisicing do ipsum aliqua nulla id eiusmod in pariatur Lorem ex veniam laborum exercitation duis veniam enim magna eiusmod incididunt laboris Lorem excepteur reprehenderit eu ullamco deserunt proident occaecat sit velit consequat sunt aliqua officia tempor nostrud sint laboris deserunt cupidatat amet fugiat anim ex elit culpa mollit nostrud ex irure sunt deserunt do sint ullamco laborum sint commodo eiusmod reprehenderit sunt occaecat ad dolore aliquip mollit laboris dolor sunt mollit ex et sunt minim ad eu veniam pariatur in elit reprehenderit tempor.
+## What I’m working on
+基本的なCS概念を勉強（し直）しています。
+- OSに関する勉強
+    - 最近では「［作って学ぶ］OSのしくみⅠ」という本を頑張って読んでいます
+    - Rustで並行処理を理解することを目標に取り組んでいます！
 
-Enim ad adipisicing enim irure ipsum est reprehenderit excepteur adipisicing ipsum ut culpa irure reprehenderit ad sunt anim nostrud fugiat anim culpa dolore do duis mollit culpa tempor laborum commodo cupidatat est reprehenderit minim esse incididunt aute consectetur fugiat laboris ipsum deserunt exercitation dolor minim proident proident labore irure aliqua anim nostrud velit labore qui nostrud ipsum do magna est deserunt do est nisi reprehenderit commodo id laborum adipisicing laboris qui nisi do fugiat ex est adipisicing esse ex occaecat commodo exercitation laboris exercitation id nostrud ut officia ipsum enim irure exercitation ex incididunt anim ea dolore eiusmod exercitation consectetur.
+## アカウント
+- X(旧Twitter)：[en06n_256](https://x.com/en06n_256)
+- GitHub：[shio](https://github.com/en06n)
+- Zenn：[shio](https://zenn.dev/en06n)
+- AtCoder：[en06n](https://atcoder.jp/users/en06n)

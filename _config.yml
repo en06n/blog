@@ -57,7 +57,7 @@ description: 'My website description'
 url: 'https://www.example.com'
 logo: logo.png
 favicon: /favicon.ico
-timezone: America/Los_Angeles
+timezone: Asia/Tokyo
 
 # Author
 author:
@@ -66,6 +66,8 @@ author:
   avatar: logo.png
 
 # Data
+home_posts_limit: 5
+
 feeds:
   limit: 30
   rss: '/feed.xml'

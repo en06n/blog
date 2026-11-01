@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 {% include head.html %}
-   <body>
-      {% include header.html %}
 
-      <div class="container">
-         <div class="row">
-            <div class="col"></div>
-               <div class="col-sm-12 col-md-8">
-                  {{ content }}
-               </div>
-               <div class="col"></div>
-         </div> <!-- row -->
-      </div> <!-- container -->
+<body>
+   {% include header.html %}
 
-      <!-- structured data -->
-      <div itemscope>
-         <meta itemprop="canonical" content="{{ page.url | absolute_url }}">
-         <meta itemprop="url" content="{{ page.url | absolute_url }}">
-         <!-- "imported" from head.html -->
-         <meta itemprop="name" content="{{ page_title }}">
-         <meta itemprop="description" content="{{ page_description }}">
-      </div>
+   <div class="container">
+      <div class="row">
+         <div class="col"></div>
+         <div class="col-sm-12 col-md-8">
+            {{ content }}
+         </div>
+         <div class="col"></div>
+      </div> <!-- row -->
+   </div> <!-- container -->
 
-      {% include footer.html %}
-      {% include foot.html %}
-   </body>
+   <!-- structured data -->
+   <div itemscope>
+      <meta itemprop="canonical" content="{{ page.url | absolute_url }}">
+      <meta itemprop="url" content="{{ page.url | absolute_url }}">
+      <!-- "imported" from head.html -->
+      <meta itemprop="name" content="{{ page_title }}">
+      <meta itemprop="description" content="{{ page_description }}">
+   </div>
+
+   {% include footer.html %}
+   {% include foot.html %}
+</body>
+
 </html>

@@ -2,13 +2,17 @@
 layout: default
 ---
 
-# Hello, world!
+<section class="toppage-hero">
+    <img src="{{ 'toppage.png' | img_url }}" alt="トップページの写真">
+    <h1>Blog</h1>
+</section>
 
-Sint nisi labore do occaecat nisi do anim elit non laboris fugiat sit nostrud aliqua commodo consectetur pariatur exercitation minim aute consectetur irure nulla irure laborum pariatur amet est sunt irure laborum consequat quis deserunt duis quis ad sit nulla reprehenderit excepteur proident deserunt pariatur cupidatat quis dolor dolor incididunt irure dolore dolor dolor incididunt do sint anim deserunt mollit quis do velit sit ullamco pariatur ex nisi nisi consectetur consectetur eu cillum culpa pariatur eiusmod pariatur proident reprehenderit consectetur non ea elit aute est aliquip veniam sint commodo est anim eiusmod culpa aliqua in incididunt sit nostrud nulla pariatur.
-
-{% include image.html
-file="logo.png"
-alt="logo"
-caption=null
-source_link=null
-%}
+<section>
+    {% for post in site.posts limit: site.home_posts_limit %}
+    <article class="mb-4">
+        <h3 class="h4"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p>{{ post.date | date: "%Y/%m/%d"}}</p>
+        <p>{{ post.excerpt }}</p>
+    </article>
+    {% endfor %}
+</section>
