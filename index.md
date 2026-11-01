@@ -3,7 +3,7 @@ layout: default
 ---
 
 <section class="toppage-hero">
-    <img src="{{ 'toppage.png' | img_url }}" alt="トップページの写真">
+    <img src="{{ 'toppage.jpg' | img_url }}" alt="トップページの写真">
     <h1>Blog</h1>
 </section>
 
