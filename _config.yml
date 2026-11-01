@@ -54,6 +54,7 @@ sass:
 # Metadata
 title: 'en06n'
 url: 'https://en06n.github.io'
+baseurl: '/blog'
 logo: logo.png
 favicon: /favicon.ico
 timezone: Asia/Tokyo
