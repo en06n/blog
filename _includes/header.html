@@ -7,7 +7,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item mx-1">
                     <a class="nav-link {% if page.url == '/posts/' %}active{% endif %}"
                         href="{{ '/posts/' | relative_url }}">blog</a>
@@ -19,6 +19,12 @@
                 <li class="nav-item mx-1">
                     <a class="nav-link {% if page.url == '/HP/' %}active{% endif %}"
                         href="{{ '/HP/' | relative_url }}">HP</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link {% if page.url == '/search/' %}active{% endif %}"
+                        href="{{ '/search/' | relative_url }}" aria-label="Search">
+                        <img src="{{ '/img/search.png' | relative_url }}" alt="" width="20" height="20">
+                    </a>
                 </li>
             </ul>
         </div> <!-- navbar -->
