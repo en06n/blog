@@ -1,6 +1,7 @@
 ---
 layout: standalone
 title: Blog
+permalink: /posts/
 ---
 
 {% for post in site.posts limit: site.feeds.limit %}

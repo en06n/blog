@@ -27,13 +27,15 @@ module Jekyll
     private
 
     def create_url(input, config_key)
-      base_url = @context.registers[:site].config[config_key]
+      site_config = @context.registers[:site].config
+      image_base_url = site_config[config_key]
 
-      if base_url.nil?
+      if image_base_url.nil?
         abort "Cannot find site config value for key: #{ config_key }"
       end
 
-      return "#{ base_url }#{ input }"
+      baseurl = site_config['baseurl'].to_s.sub(%r{/$}, '')
+      return "#{ baseurl }#{ image_base_url }#{ input }"
     end
   end
 end
